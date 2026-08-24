@@ -24,8 +24,12 @@
       <a href="#how">How it works</a>
       <a href="#pricing">Pricing</a>
       <a href="#generator">Generator</a>
+      <a href="#faq">FAQ</a>
     </nav>
-    <a class="btn btn-ghost" href="#generator">Try it free</a>
+    <div class="header-actions">
+      <button class="btn btn-ghost btn-sm" type="button" data-auth="login">Log in</button>
+      <button class="btn btn-primary btn-sm" type="button" data-auth="signup">Sign up</button>
+    </div>
   </header>
 
   <main id="top">
@@ -270,6 +274,36 @@
       <p class="pricing-note">Pricing is placeholder content for the MVP and can be connected to Stripe later.</p>
     </section>
 
+    <section id="faq" class="section faq">
+      <div class="section-heading">
+        <span class="eyebrow">Good to know</span>
+        <h2>Frequently asked questions</h2>
+        <p>Everything you need to know about creating faceless videos with ClipVanta.</p>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item" open>
+          <summary>Do I need to show my face or record video?<span class="faq-icon" aria-hidden="true">+</span></summary>
+          <p>No. ClipVanta is built for faceless content. You get scripts, scene directions, captions, and voiceover notes so you can create using stock footage, AI visuals, or screen recordings.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Which platforms does it support?<span class="faq-icon" aria-hidden="true">+</span></summary>
+          <p>Every plan is optimized for TikTok, Instagram Reels, and YouTube Shorts in a vertical 9:16 format, with pacing tuned for each platform.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Do I need an API key or payment to try it?<span class="faq-icon" aria-hidden="true">+</span></summary>
+          <p>Not right now. This is a working front-end demo — the generator creates a full sample plan directly in your browser with no signup, API key, or payment required.</p>
+        </details>
+        <details class="faq-item">
+          <summary>What does a generated plan include?<span class="faq-icon" aria-hidden="true">+</span></summary>
+          <p>Each plan includes multiple hooks, a full script, a scene-by-scene shot plan, on-screen captions, ready-to-use hashtags, and voiceover delivery direction.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Can I use the videos commercially?<span class="faq-icon" aria-hidden="true">+</span></summary>
+          <p>Yes. On the Pro plan, everything you create is cleared for commercial use across your channels and client work.</p>
+        </details>
+      </div>
+    </section>
+
     <section class="cta section">
       <div>
         <span class="eyebrow">Create without showing your face</span>
@@ -288,6 +322,35 @@
     <p>© 2026 ClipVanta. Built for faceless creators.</p>
     <div class="footer-links"><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Contact</a></div>
   </footer>
+
+  <div class="modal-overlay" id="authModal" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="authTitle">
+      <button class="modal-close" type="button" data-close-modal aria-label="Close">×</button>
+      <div class="modal-brand">
+        <span class="brand-mark">C</span>
+        <span>ClipVanta<span class="accent"> AI</span></span>
+      </div>
+      <h3 id="authTitle" class="modal-title">Welcome back</h3>
+      <p class="modal-sub" id="authSub">Log in to keep creating faceless videos.</p>
+      <form id="authForm" class="modal-form">
+        <label class="auth-name-field">
+          Full name
+          <input type="text" name="name" placeholder="Alex Rivera" autocomplete="name" />
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" placeholder="you@example.com" autocomplete="email" required />
+        </label>
+        <label>
+          Password
+          <input type="password" name="password" placeholder="••••••••" autocomplete="current-password" required />
+        </label>
+        <button class="btn btn-primary full" type="submit" id="authSubmit">Log in</button>
+        <p class="auth-switch" id="authSwitch">Don't have an account? <button type="button" data-auth-toggle>Sign up</button></p>
+        <p class="form-note">Demo mode — no account is actually created.</p>
+      </form>
+    </div>
+  </div>
 
   <script src="./script.js"></script>
 </body>
