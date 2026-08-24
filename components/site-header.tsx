@@ -5,10 +5,10 @@ import type { AuthMode } from "./auth-modal";
 export function SiteHeader({ onAuth }: { onAuth: (mode: AuthMode) => void }) {
   return (
     <header className="site-header">
-      <a className="brand" href="#top" aria-label="ClipVanta home">
+      <a className="brand" href="#top" aria-label="ClipVantra home">
         <span className="brand-mark">C</span>
         <span>
-          ClipVanta<span className="accent"> AI</span>
+          ClipVantra<span className="accent"> AI</span>
         </span>
       </a>
       <nav className="nav">

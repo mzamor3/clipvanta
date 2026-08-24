@@ -49,7 +49,7 @@ export default function Home() {
                 <span className="dot red" />
                 <span className="dot yellow" />
                 <span className="dot green" />
-                <span className="window-title">ClipVanta Studio</span>
+                <span className="window-title">ClipVantra Studio</span>
               </div>
               <div className="window-body">
                 <div className="mini-sidebar">
@@ -119,7 +119,7 @@ export default function Home() {
             <span className="eyebrow">Everything in one workflow</span>
             <h2>From blank page to publish-ready plan</h2>
             <p>
-              ClipVanta helps you create the parts that normally slow faceless
+              ClipVantra helps you create the parts that normally slow faceless
               creators down.
             </p>
           </div>
@@ -203,7 +203,7 @@ export default function Home() {
         <section id="generator" className="section generator-section">
           <div className="section-heading">
             <span className="eyebrow">Interactive demo</span>
-            <h2>Try the ClipVanta generator</h2>
+            <h2>Try the ClipVantra generator</h2>
             <p>
               This version generates a polished sample plan in your browser so
               the site works immediately after upload.
@@ -224,7 +224,7 @@ export default function Home() {
               <div className="price">
                 $0<span>/mo</span>
               </div>
-              <p>Perfect for trying ClipVanta.</p>
+              <p>Perfect for trying ClipVantra.</p>
               <ul>
                 <li>3 video plans per month</li>
                 <li>Hooks + scripts</li>
@@ -294,7 +294,7 @@ export default function Home() {
                 </span>
               </summary>
               <p>
-                No. ClipVanta is built for faceless content. You get scripts,
+                No. ClipVantra is built for faceless content. You get scripts,
                 scene directions, captions, and voiceover notes so you can create
                 using stock footage, AI visuals, or screen recordings.
               </p>
@@ -358,7 +358,7 @@ export default function Home() {
             <span className="eyebrow">Create without showing your face</span>
             <h2>Your next short starts with one idea.</h2>
             <p>
-              Use ClipVanta to turn it into a structured, ready-to-create video
+              Use ClipVantra to turn it into a structured, ready-to-create video
               plan.
             </p>
           </div>
@@ -372,10 +372,10 @@ export default function Home() {
         <a className="brand" href="#top">
           <span className="brand-mark">C</span>
           <span>
-            ClipVanta<span className="accent"> AI</span>
+            ClipVantra<span className="accent"> AI</span>
           </span>
         </a>
-        <p>© 2026 ClipVanta. Built for faceless creators.</p>
+        <p>© 2026 ClipVantra. Built for faceless creators.</p>
         <div className="footer-links">
           <a href="#">Privacy</a>
           <a href="#">Terms</a>
