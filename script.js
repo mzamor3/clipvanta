@@ -1,4 +1,42 @@
+const SUPABASE_URL = "https://otnyxlrswmsleukyhesk.supabase.co";
+const SUPABASE_PUBLISHABLE_KEY = "sb_publishable_DysFTBLuAia68d-UaL1bkg_pd6uY7pb";
+async function signUp(email, password) {
+  const { data, error } = await supabaseClient.auth.signUp({
+    email,
+    password
+  });
 
+  if (error) {
+    alert(error.message);
+    return;
+  }
+
+  alert("Account created. Check your email if confirmation is required.");
+}
+
+async function logIn(email, password) {
+  const { data, error } = await supabaseClient.auth.signInWithPassword({
+    email,
+    password
+  });
+
+  if (error) {
+    alert(error.message);
+    return;
+  }
+
+  alert("Logged in successfully.");
+}
+
+async function logOut() {
+  await supabaseClient.auth.signOut();
+  alert("Logged out.");
+}
+
+const supabaseClient = window.supabase.createClient(
+  SUPABASE_URL,
+  SUPABASE_PUBLISHABLE_KEY
+);
 const form = document.getElementById("generatorForm");
 const output = document.getElementById("output");
 
